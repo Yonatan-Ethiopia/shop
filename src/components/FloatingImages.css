@@ -94,8 +94,7 @@
 
 @media( max-width:720px){
    .float-container{
-	right:60%;
-	   width:20vw;
+	margin-left:0;
    }
    .item3 { left: 45%;  top: 1%; }  /* big - back */
 .item4 { left: 45%; top: 30%; }  /* big - back */
