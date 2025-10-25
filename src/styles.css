@@ -75,6 +75,7 @@
   margin: 2rem;
 }
 .header {
+	overflow-y:hidden;
 	overflow-x:hidden;
 background-color:#ffffff;
   position: relative;
