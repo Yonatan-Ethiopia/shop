@@ -456,6 +456,7 @@ background-color:#ffffff;
 }
 @media(max-width:760px){
   .detail{
+	  z-index:9;
   top:60%;
 	transform: translateX(50%);
 	
