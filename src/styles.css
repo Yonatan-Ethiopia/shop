@@ -75,6 +75,7 @@
   margin: 2rem;
 }
 .header {
+	overflow-x:hidden;
 background-color:#ffffff;
   position: relative;
   height: 80vh; /* or whatever fits your design */
