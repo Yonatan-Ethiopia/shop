@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-
+import { useState } from "react";
 import "./ProductDetail.css";
 import allProducts from "../data/products"
 import ProductCard from "../components/productCard"
