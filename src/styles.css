@@ -22,7 +22,7 @@
   overflow: hidden;
   background-color: white;
 }
-.card img {
+.card .img-wrapper img {
   width: 100%;
   aspect-ratio: 1 / 1.2;  /* square images */
   object-fit: cover;
@@ -30,11 +30,11 @@
   border-radius: 15px; /* optional */
   transition: transform 0.5s ease-in-out;
 }
-.card img:hover{
+.card .img-wrapper img:hover{
   transform:scale(1.05);
 }
 
-.card p {
+.card .p {
   margin-left: 0.3rem;
   font-size: 0.8rem;
   font-weight:normal;
