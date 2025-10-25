@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-import ShimmerPlaceholder from "./ShimmerPlaceholder"
 function ProductCard({ name, price, image, id}){
 	
 
