@@ -2,25 +2,25 @@ import { useEffect, useRef } from "react";
 import "./FloatingImages.css";
 
 const images = [
-  "/file1.png",
-  "/file2.png",
-  "/file3.png",
-  "/file4.png",
-  "/file5.png",
-  "/file6.png",
-  "/file7.png",
-  "/file8.png",
-  "/file9.png",
-  "/file10.png",
-  "/file11.png",
-  "/file12.png",
-  "/file13.png",
-  "/file14.png",
-  "/file15.png",
-  "/file16.png",
-  "/file17.png",
-  "/file18.png",
-  "/file19.png"
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file1.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file2.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file3.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file4.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file5.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file6.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file7.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file8.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file9.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file10.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file11.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file12.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file13.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file14.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file15.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file15.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file17.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file18.png",
+  "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/file19.png"
 ];
 
 function FloatingImages() {
