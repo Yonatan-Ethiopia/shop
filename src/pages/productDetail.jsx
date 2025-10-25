@@ -4,7 +4,6 @@ import "./ProductDetail.css";
 import allProducts from "../data/products"
 import ProductCard from "../components/productCard"
 import OrderOverlay from "../components/OrderOverlay"
-import ShimmerPlaceholder from "../components/ShimmerPlaceholder"
 import "../components/ShimmerPlaceholder.css"
 const products = allProducts
 
