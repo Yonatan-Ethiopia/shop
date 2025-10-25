@@ -1,7 +1,7 @@
 .section {
   width: 100%; /* or 1000px depending on design */
   margin: 0 auto;    /* center the section */
-  padding: 1rem;
+  padding: 0rem;
 }
 
 .grid {
