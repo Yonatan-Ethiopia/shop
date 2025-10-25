@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+
 import "./ProductDetail.css";
 import allProducts from "../data/products"
 import ProductCard from "../components/productCard"
@@ -9,7 +9,7 @@ import "../components/ShimmerPlaceholder.css"
 const products = allProducts
 
 function ProductDetail() {
-	const [loaded, setLoaded] = useState(false);
+	
 
   const { id } = useParams();
   const cleanId = id.replace(':', '');
@@ -27,8 +27,8 @@ function ProductDetail() {
     <div className="product-detail">
       <div className="detail-left">
       
-		 {!loaded && <ShimmerPlaceholder />}
-        <img src={product.image} alt={product.name} loading="lazy"   onLoad={() => setLoaded(true)} style={{ display: loaded ? "block" : "none" }}/>
+		 
+        <img src={product.image} loading="lazy"   />
       </div>
 
       <div className="detail-right">
