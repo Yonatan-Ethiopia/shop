@@ -1,0 +1,436 @@
+.section {
+  max-width: 1100px; /* or 1000px depending on design */
+  margin: 0 auto;    /* center the section */
+  padding: 1rem;
+}
+
+.grid {
+  margin-top:1.3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem; /* about one mouse pointer apart */
+  justify-content: center;
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.card {
+  position:relative;
+  border-radius:15px;
+  overflow: hidden;
+  background-color: white;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1.2;  /* square images */
+  object-fit: cover;
+  display: block;
+  border-radius: 15px; /* optional */
+  transition: transform 0.5s ease-in-out;
+}
+.card img:hover{
+  transform:scale(1.05);
+}
+
+.card p {
+  margin-left: 0.3rem;
+  font-size: 0.8rem;
+  font-weight:normal;
+}
+.card text {
+  margin-left: 0.3rem;
+  font-size:1.2rem;
+}
+@media ( max-width: 720px){
+  .card text{
+	font-size:1rem;
+  }
+}
+.button {
+  text-align: center;
+  margin-top: 1.3rem;
+}
+#title {
+  font-size: 2rem;
+  margin-bottom: 10rem;
+}
+#button {
+  width: 7.5rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 1px solid black;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+#button:hover{
+  border: 2px solid black;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+.header {
+background-color:#000000;
+  position: relative;
+  height: 50vh; /* or whatever fits your design */
+  color: white;
+}
+.header img{
+  margin-left:3rem;
+}
+.detail {
+  position: absolute;
+  top: 50%;
+  left: 10%;  /* push it slightly to the left */
+  transform: translateY(-50%); /* perfectly center vertically */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* optional transparent bg */
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 500px;
+}
+.detail #name {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.detail #defination {
+  margin-left: 0.2rem;
+  font-size: 1.4rem;
+  color: #000000;
+  margin-bottom: 0.4rem;
+}
+.detail #shopNow {
+  width:7.5rem;
+  height:3rem;
+  background-color:#515151;
+  border-radius:7px;
+  border:none;
+  color: #ffffff;
+  font-size:0.9rem;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  
+  padding: 0 1.5rem;
+  height: 3.5rem;
+  background: white;
+  
+  top: 0;
+  
+  z-index: 1000;
+}
+
+
+.navbar .menu,
+.navbar .searchB {
+  display: flex;
+  align-items: center;
+}
+.navbar .searchB{
+  position: absolute;
+  left: 98%;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-90%) scale(1);
+}
+.navbar .menu {
+  position: absolute;
+  right: 98%;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(90%) scale(1);
+}
+
+.navbar .menu:hover {
+  transform: translateX(90%) scale(1.2);
+  transform-origin: 50% 50%;
+}
+.navbar .searchB:hover {
+  transform: translateX(-90%) scale(1.2);
+  transform-origin: 50% 50%;
+}
+.navbar .topText {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background: white;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 999;
+}
+  /* start hidden 
+  
+}   */
+
+/* active/open state */
+/*.sidebar.open {
+  transform: translateX(0);
+}  */
+
+
+#lnk {
+  cursor: pointer;
+  font-weight: 500;
+  color: #000000;
+}
+
+#lnk:hover {
+  color: #555000;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0); /* makes it black */
+  cursor: pointer;
+}
+@keyframes sidebarEnter {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes sidebaExit {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.sidebar {
+  animation: sidebarExit 0.3s forwards; 
+  
+}
+
+.sidebar.open {
+  animation: sidebarEnter 0.3s forwards;
+}  
+
+
+
+    /* Base Sidebar Styling (fixed position, shadow, initial off-screen placement) */
+    /*.sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 280px;
+      background: #ffffff;
+      box-shadow: 4px 0 15px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+      /* Crucially, set the initial position to hidden */
+    /*  transform: translateX(-100%);
+      padding-top: 5rem; /* Space for the fixed Navbar */
+  /*  }  */
+    
+    /* Animation Classes */
+    .sidebar.opening {
+      animation: sidebarEnter 0.3 forwards;
+    }
+
+    .sidebar.closing {
+      animation: sidebarExit 0.3 forwards;
+    }
+    
+/*.About{
+  width: 100vw;
+  height: 100vh;  fills full screen height 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white; or whatever fits your design 
+  overflow-y: auto; optional if you want it scrollable 
+  position: relative;
+  z-index: 0;
+}  
+*/
+/* The main container for the About page */
+.About {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: #fafafa;
+  min-height: 100vh; /* fills screen */
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Container inside AboutCard for all cards */
+.aboutcards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Individual card style */
+.aboutcard {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  flex: 1 1 280px; /* responsive width, min 280px */
+  max-width: 340px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subtle hover effect */
+.aboutcard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image */
+#aboutimg {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  filter: brightness(0) saturate(100%);
+}
+
+/* Title styling */
+#abouttitle {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+/* Description styling */
+#aboutdesc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+/* Contact button area */
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Icon buttons */
+.contact a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f1f1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background 0.2s ease;
+}
+
+.contact a:hover {
+  background: #e3e3e3;
+}
+
+.contact-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%);
+}
+.about-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%); /* makes most SVGs black */
+}
+
+
+.hero {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #fff, #f6f6f6);
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #000;
+}
+.hero-content p {
+  font-size: 1.3rem;
+  color: #444;
+  font-weight: bold;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.category-page {
+ 
+  padding: 40px 20px;
+}
+
+.products-grid {
+   max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin: 0 auto;    /* center the section */
+  padding: 1rem;
+}
+@media (min-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border: none;
+  background: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #000;
+  color: white;
+}
+
+
+
+
