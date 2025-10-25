@@ -9,9 +9,10 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import CategoryPage from "./pages/CollectionPage";
 import ProductDetail from "./pages/productDetail";
+import AllCategories from "./pages/AllCategory";
 function App() {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-	const back45 = "back45.jpg"                                                  
+	const back45 = "bak3.png"                                                  
 	const cat = [
 	{ title: "Home", link: "/"},
     { title: "Shein", link: "/collections/shein"},
@@ -33,6 +34,7 @@ function App() {
         <Route path="/about" element={<About />} />
          <Route path="/collections/:categoryName" element={<CategoryPage />}/>\
          <Route path="/product/:id" element={<ProductDetail />}/>
+         <Route path="/product/All" element={<AllCategories />}/>
      </Routes>
 
       {isSidebarOpen && <Sidebar
