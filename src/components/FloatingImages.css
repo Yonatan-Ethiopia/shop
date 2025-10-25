@@ -1,9 +1,10 @@
 .float-container {
-  position: absolute;
-  right:30%;
+  position:absolute;
+  margin-left:30rem;
   top: 1%;
-  width: 40vw;
-  height: 75vh;
+  width:40vw;
+   min-height:75vh;
+   height:auto;
   pointer-events: none;
   z-index: 5;
 }
