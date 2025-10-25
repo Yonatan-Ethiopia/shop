@@ -7,7 +7,7 @@ function Home(){
 	const shein = [ {id:1 , name:"Mauve purple", image:"https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/shein1.jpg?width=500&quality=70&format=webp", price:"Br4,300.00 ETB"},
 	                   { id: 2, name:"Mesh Panel Square Neck Tops", image:"https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/shein2.jpg?width=500&quality=70&format=webp", price:"Br1,800.00 ETB"},
 	                   { id: 3, name:"High-Waist Bodycon Maxi Skirt (Cow Print)", image:"https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/shein3.jpg?width=500&quality=70&format=webp", price:"Br3,000.00 ETB"},
-	                   { id: 4, name:"Floral & Plain Crop Tanks", image:"https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/shirt4.png?width=500&quality=70&format=webp", price:"Br1,900.00 ETB"} ]
+	                   { id: 4, name:"Floral & Plain Crop Tanks", image:"https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/shein4.jpg", price:"Br1,900.00 ETB"} ]
 
 	const elec = [ { id:15, name: "Samsung S22 Ultra - 256GB", image:"https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/elec.jpg?width=500&quality=70&format=webp", price: "Br63,000.00 ETB", category: "electronics"},
   { id:16, name: "Iphone 11 Pro", image: "https://uvvfxecxirwxnefamcpt.supabase.co/storage/v1/object/public/productImages/elec2.jpg?width=500&quality=70&format=webp", price: "Br95,000.00 ETB", category:"electronics"},
