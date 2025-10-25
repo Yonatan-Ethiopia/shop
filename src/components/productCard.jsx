@@ -7,8 +7,9 @@ function ProductCard({ name, price, image, id}){
 	return(
 	<Link to={`/product/:${id}`} style={{textDecoration: 'none', color: 'inherit'}}>
 	<div className = "card" >
-		{!loaded && <ShimmerPlaceholder />}
-	    <img id="productImg" src={image} alt={name} loading="lazy"  onLoad={() => setLoaded(true)} />
+		<div className="img-wrapper">
+	    <img id="productImg" src={image} alt="" loading="lazy" />
+	    </div>
 	    <p>{name}</p>
 	    <text>{price}</text> 
 	</div>
