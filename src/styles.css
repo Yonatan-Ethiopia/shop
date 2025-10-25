@@ -569,6 +569,7 @@ background-color:#ffffff;
 @media( max-width:720px){
    .float-container{
 	right:60%;
+	   width:100%;
    }
    .item3 { left: 45%;  top: 15%; }  /* big - back */
 .item4 { left: 45%; top: 50%; }  /* big - back */
@@ -578,7 +579,7 @@ background-color:#ffffff;
 .item11 { left: 44%; top: 15%; }
 .item0 { left: 80%; top: 40%; }  /* small - front */
 .item1 { left: 70%; top: 29%; }
-.item2 { left: 90%; top: 10%; }
+.item2 { width:250px; left: 90%; top: 5%; }
 .item5 { left: 80%; top: 50%; }
 .item6 { left: 110%; top: 55%; }
 .item7 { left: 123%; top: 42%; }
