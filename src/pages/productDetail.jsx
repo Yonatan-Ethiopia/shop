@@ -27,7 +27,7 @@ function ProductDetail() {
       <div className="detail-left">
       
 		 
-        <img src={product.image} loading="lazy"   />
+        <img src={product.image} loading="lazy" alt=""   />
       </div>
 
       <div className="detail-right">
