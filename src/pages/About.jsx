@@ -21,8 +21,8 @@ function About(){
     headline: "Contact us",
     desc: "Get in touch with us!",
     buttons: [
-      { icon: phone, link: "tel:+251XXXXXXXX" },
-      { icon: telegram, link: "https://t.me/sudo" },
+      { icon: phone, link: "tel:+251931552178" },
+      { icon: telegram, link: "https://t.me/nadielll" },
     ],
   },
 ];
