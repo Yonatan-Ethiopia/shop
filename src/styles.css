@@ -80,6 +80,24 @@ background-color:#000000;
   height: 50vh; /* or whatever fits your design */
   color: white;
 }
+@media(max-width:760px){
+  .detail{
+  top:60%;
+	transform: translateX(50%);
+	
+  }
+  .detail #name{
+	display:none;
+  }
+  .detail #defination{
+	display:none;
+  }
+  .detail #shopNow{
+	background-color:#ffffff;
+	color: #000000;
+  }
+  
+}
 .header img{
   margin-left:3rem;
 }
