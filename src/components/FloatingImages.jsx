@@ -1,4 +1,4 @@
-import useRef from "react";
+
 import "./FloatingImages.css";
 
 const images = [
@@ -24,7 +24,7 @@ const images = [
 ];
 
 function FloatingImages() {
-  const containerRef = useRef(null);
+ 
 
   // Cursor parallax effect
   //useEffect(() => {
@@ -40,7 +40,7 @@ function FloatingImages() {
   //}, []);
 
   return (
-    <div className="float-container" ref={containerRef}>
+    <div className="float-container">
       {images.map((src, i) => (
         <img key={i} src={src} className={`float-img item${i}`} alt="" />
       ))}
