@@ -1,6 +1,6 @@
 import allProducts from "../data/products";
 import ProductCard from "../components/productCard";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 function AllCategories(){
 	const [page, setPage] = useState(1);
     const perPage = 16;
