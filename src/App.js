@@ -28,7 +28,9 @@ function App() {
       <Navbar
   onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)}
   isOpen={isSidebarOpen}
+  onSearchClick={() => setSearchOpen(!searchOpen)}
 />
+{searchOpen && <SearchBar products={allProducts} />}
 <Routes>
 <Route path="/" element={<> <Header hImage = {back45}/> <Home /> </>} />
         <Route path="/about" element={<About />} />
