@@ -10,6 +10,8 @@ import Sidebar from "./components/Sidebar";
 import CategoryPage from "./pages/CollectionPage";
 import ProductDetail from "./pages/productDetail";
 import AllCategories from "./pages/AllCategory";
+import allProducts from "./data/products";
+import SearchBar from "./components/SearchBarUI"
 function App() {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 	const [searchOpen, setSearchOpen] = useState(false);
