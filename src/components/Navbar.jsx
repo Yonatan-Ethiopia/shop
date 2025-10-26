@@ -1,7 +1,7 @@
 import menuIcon from "../assets/icons/menu.svg";
 import search from "../assets/icons/search.svg";
 import cancle from "../assets/icons/cancle.svg";
-function Navbar( {onMenuClick, isOpen} ){
+function Navbar( {onMenuClick, isOpen, onSearchClick} ){
 	return(
 	    <div className="navbar">
 	        <div className="menu" onClick={onMenuClick}>
@@ -10,7 +10,7 @@ function Navbar( {onMenuClick, isOpen} ){
 	        <div className="topText">
 	           <text id="title2">Nadiel's shop</text> 
 	        </div>
-	        <div className="searchB">
+	        <div className="searchB" onClick={onSearchClick}>
 	           <img src={search} alt="search" className="icon" style={{ width: 30 }}/>
 	        </div>
 	    </div>
