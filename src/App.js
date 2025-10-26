@@ -21,7 +21,7 @@ function App() {
 	{ title: "Home", link: "/"},
     { title: "Shein", link: "/collections/shein"},
     { title: "Mobile and Electronics", link: "/collections/electronics" },
-    { title: "Supplements", link: "/collections/supplments" },
+    { title: "Supplements", link: "/collections/supplements" },
     { title: "Skin care Products", link: "/collections/skincare"},
     { title: "About Us", link: "/about"}
   ];
