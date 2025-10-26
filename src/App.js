@@ -12,6 +12,8 @@ import ProductDetail from "./pages/productDetail";
 import AllCategories from "./pages/AllCategory";
 function App() {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+	const [searchOpen, setSearchOpen] = useState(false);
+	 const [showResults, setShowResults] = useState(false);
 	const back45 = "bak3.png"                                                  
 	const cat = [
 	{ title: "Home", link: "/"},
